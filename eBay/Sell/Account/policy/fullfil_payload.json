@@ -1,0 +1,92 @@
+{
+    "categoryTypes": [
+        {
+            "name": "ALL_EXCLUDING_MOTORS_VEHICLES"
+        }
+    ],
+    "marketplaceId": "EBAY_US",
+    "name": "Detailed shipping options: FLAT_RATE domestic, CALCULATED int'l",
+    "globalShipping": "false",
+    "handlingTime": {
+        "unit": "DAY",
+        "value": "1"
+    },
+    "shippingOptions": [
+        {
+            "costType": "FLAT_RATE",
+            "optionType": "DOMESTIC",
+            "shippingServices": [
+                {
+                    "additionalShippingCost": {
+                        "currency": "USD",
+                        "value": "5.00"
+                    },
+                    "buyerResponsibleForShipping": "true",
+                    "freeShipping": "false",
+                    "shippingCarrierCode": "USPS",
+                    "shippingServiceCode": "USPSPriorityFlatRateBox",
+                    "shippingCost": {
+                        "currency": "USD",
+                        "value": "7.15"
+                    }
+                }
+            ]
+        },
+        {
+            "costType": "CALCULATED",
+            "optionType": "INTERNATIONAL",
+            "insuranceOffered": "true",
+            "insuranceFee": {
+                "currency": "USD",
+                "value": "10.00"
+            },
+            "shippingServices": [
+                {
+                    "buyerResponsibleForShipping": "true",
+                    "freeShipping": "false",
+                    "shippingCarrierCode": "USPS",
+                    "shippingServiceCode": "USPSPriorityMailInternational",
+                    "shipToLocations": {
+                        "regionIncluded": [
+                            {
+                                "regionName": "Europe"
+                            },
+                            {
+                                "regionName": "AU"
+                            },
+                            {
+                                "regionName": "JP"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "buyerResponsibleForShipping": "true",
+                    "freeShipping": "false",
+                    "shippingCarrierCode": "USPS",
+                    "shippingServiceCode": "USPSPriorityMailInternationalSmallFlatRateBox",
+                    "shipToLocations": {
+                        "regionIncluded": [
+                            {
+                                "regionName": "Worldwide"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "shipToLocations": {
+        "regionExcluded": [
+            {
+                "regionName": "Middle East"
+            },
+            {
+                "regionName": "GG"
+            },
+            {
+                "regionName": "JE"
+            }
+        ]
+    }
+}
