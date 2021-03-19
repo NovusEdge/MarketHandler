@@ -62,10 +62,3 @@ if __name__ == "__main__":
     }, conf)
 
     conf.close()
-
-'''
-python3 setup.py -username=fermi \
--app_id=AlexPrio-ShopMini-SBX-4dc6ffda4-36ac3745 \
--dev_id=4202d90a-c4db-4a9e-aa8e-27e2cfc72d72 \
--cert=SBX-dc6ffda47286-fef1-456e-9e31-38af
-'''
