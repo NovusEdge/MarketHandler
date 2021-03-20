@@ -3,7 +3,7 @@ import requests
 # reference: https://developer.ebay.com/api-docs/sell/account/resources/methods
 
 def create_fulfillment_policy(payload: dict):
-    r = requests.post("https://api.sandbox.ebay.com/sell/account/v1/fulfillment_policy", payload=payload)
+    r = requests.post("https://api.sandbox.ebay.com/sell/account/v1/fulfillment_policy", data=payload)
     return r
 
 def delete_fulfillment_policy(policy_id: str):
@@ -26,5 +26,5 @@ def get_fulfillment_policy(policy_id: str, marketplace_id: str, name: str, polic
 
 
 def update_fulfillment_policy(policy_id: str, payload: dict):
-    r = requests.put(f"https://api.sandbox.ebay.com/sell/account/v1/fulfillment_policy/{policy_id}", payload=payload)
+    r = requests.put(f"https://api.sandbox.ebay.com/sell/account/v1/fulfillment_policy/{policy_id}", data=payload)
     return r

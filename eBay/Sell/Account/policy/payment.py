@@ -2,7 +2,7 @@ import requests
 
 
 def create_payment_policy(payload: dict):
-    r = requests.post("https://api.sandbox.ebay.com/sell/account/v1/payment_policy", payload=payload)
+    r = requests.post("https://api.sandbox.ebay.com/sell/account/v1/payment_policy", data=payload)
     return r
 
 def delete_payment_policy(policy_id: str):
@@ -24,5 +24,5 @@ def get_payment_policy(policy_id: str, marketplace_id: str, name: str, policy_na
     return r_pol, r_name
 
 def update_payment_policy(policy_id: str, payload: dict):
-    r = requests.put(f"https://api.sandbox.ebay.com/sell/account/v1/payment_policy/{policy_id}", payload=payload)
+    r = requests.put(f"https://api.sandbox.ebay.com/sell/account/v1/payment_policy/{policy_id}", data=payload)
     return r
